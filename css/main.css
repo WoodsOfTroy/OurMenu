@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 14pt;
+    font-family: Helvetica;
+}
+section
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+h1
+{
+    text-align: center;
+    margin: 100px auto 40px auto;
+}
+
+.ch
+{
+    text-align: left;
+
+
+}
+.bf{
+    text-align: left;
+
+}
+.su
+{
+    text-align: left;
+
+
+}
+.beef
+{
+    background-color: #7a2626;
+    min-width: 130px;
+    min-height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}
+.sushi
+{
+    background-color: #e6e675;
+    min-width: 130px;
+    min-height: 30px;
+    border: 1px solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.chicken{
+    background-color: pink;
+    min-width: 130px;
+    min-height: 30px;
+    border: 1px solid;
+    position: absolute;
+    right: 0;
+    top: 0;}
+.dish-ch,.dish-bf, .dish-su
+{
+    position: relative;
+    padding-left: 10px;
+    background-color: #858585;
+    min-height: 350px;
+    max-width: 30%;
+    border: 1px solid;
+    margin: 60px 15px 0 15px;
+    align-items: center;
+    display: flex;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    section
+    {
+        display: block;
+        max-width: 100%;
+        position: absolute;
+    }
+    .dish-ch{
+        max-width: 45%;
+        float: left;
+        margin-bottom: 35px;
+    }
+    .dish-bf{
+        max-width: 45%;
+    }
+    .dish-su{
+        clear: both;
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px)
+{
+    section
+    {
+        display: block;
+        justify-content: center;
+    }
+    .dish-ch,.dish-bf, .dish-su
+    {
+        max-width: 90%;
+    }
+}
